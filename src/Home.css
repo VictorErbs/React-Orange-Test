@@ -1,0 +1,52 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+  position: relative; /* Adicione position relative para que os elementos dentro dele sejam posicionados relativamente a este container */
+  z-index: 1;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Defina um valor negativo para colocar o vídeo atrás dos outros elementos */
+}
+
+
+h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.button-container a {
+  text-decoration: none;
+}
+
+button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  background-color: #d32f2f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #b71c1c;
+}

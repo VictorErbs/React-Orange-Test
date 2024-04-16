@@ -1,0 +1,71 @@
+/* Estilo do formulário de registro */
+.register-container {
+  position: relative; /* Adicionado para que o vídeo de fundo seja colocado corretamente */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: #fff;
+  z-index: 1; /* Define o z-index para o conteúdo do registro estar acima do vídeo de fundo */
+}
+
+/* Estilo do vídeo de fundo */
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilo do botão de registro */
+button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  background-color: #d32f2f;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+}
+
+button:hover {
+  background-color: #b71c1c; /* Altera a cor de fundo ao passar o mouse */
+}
+
+.login-link {
+  color: #ffffff; /* Defina a cor desejada para o link */
+  text-decoration: none; /* Remova o sublinhado padrão do link */
+}
+
+.login-link:hover {
+  color: #cccccc; /* Defina a cor desejada quando o link estiver em hover */
+}
